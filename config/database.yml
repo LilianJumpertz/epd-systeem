@@ -1,0 +1,18 @@
+development:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: epd_development
+  pool:     5
+  username: epduser
+  password:
+  template: template0
+test:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: epdonline_test
+  pool:     5
+  username: epduser
+  password:
+  template: template0
