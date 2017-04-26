@@ -5,14 +5,14 @@ development:
   database: epd_development
   pool:     5
   username: epduser
-  password:
+  password: password1
   template: template0
 test:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: epdonline_test
+  database: epd_test
   pool:     5
   username: epduser
-  password:
+  password: password1
   template: template0
