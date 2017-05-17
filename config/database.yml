@@ -1,18 +1,17 @@
+﻿test:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: epdsysteem_test
+  pool: 5
+  username: vagrant
+  password: password1
+
 development:
-  adapter:  postgresql
-  host:     localhost
+  adapter: postgresql
+  host: localhost
   encoding: unicode
-  database: epd_development
-  pool:     5
-  username: epduser
+  database: epdsysteem_development
+  pool: 5
+  username: vagrant
   password: password1
-  template: template0
-test:
-  adapter:  postgresql
-  host:     localhost
-  encoding: unicode
-  database: epd_test
-  pool:     5
-  username: epduser
-  password: password1
-  template: template0
