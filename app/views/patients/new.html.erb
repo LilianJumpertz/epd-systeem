@@ -1,0 +1,45 @@
+<h1>Nieuwe patiënt</h1>
+<p>Voer de gegevens van een nieuwe patiënt in:</p>
+
+<div class="row">
+  	<div class="col-md-6 col-md-offset-3">
+    	<%= form_for(@patient) do |f| %>
+      		<%= f.label :first_name, "Voornaam" %>
+      		<%= f.text_field :first_name %>
+
+      		<%= f.label :last_name, "Achternaam" %>
+      		<%= f.text_field :last_name %>
+
+			<%= f.label :gender, "Geslacht" %>
+      		<%= f.select(:gender, ["Man", "Vrouw"]) %>
+
+      		<%= f.label :BSN, "BSN nummer" %>
+      		<%= f.text_field :BSN %>
+
+      		<%= f.label :date_of_birth, "Geboortedatum" %>
+      		<%= f.date_select :date_of_birth, start_year: Date.today.year-150, end_year: Date.today.year %>
+
+     		<%= f.label :address, "Straat en huisnummer" %>
+      		<%= f.text_field :address %>
+      		
+      		<%= f.label :postal_code, "Postcode" %>
+      		<%= f.text_field :postal_code %>
+      		 
+      		<%= f.label :place_of_residence, "Plaats" %>
+      		<%= f.text_field :place_of_residence %>
+
+      		<%= f.label :phone_number, "Telefoonnummer" %>
+      		<%= f.text_field :phone_number %>
+
+      		<%= f.label :email, "Email" %>
+      		<%= f.email_field :email %>
+
+      		<%= f.label :insurance_company, "Verzekeringsmaatschappij" %>
+     		<%= f.text_field :insurance_company %>
+
+      		<%= f.label :policy_number, "Polisnummer" %>
+     		<%= f.text_field :policy_number %>
+	    <%= f.submit "Maak patiënt aan", class: "btn btn-primary" %>
+    	<% end %>
+  	</div>
+</div>

@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+
+  root 'static_pages#home'
+  
+  get 'patients/index'
+
+  get 'patients/edit'
+
+  get 'patients/update'
+
+  get 'patients/destroy'
+
+  get '/patient_created', to: 'patient#create'
+  get  '/signup_patients',  to: 'patients#new'
+  get '/view_patients', to: 'patients#show'
+
+  resources :patients
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
