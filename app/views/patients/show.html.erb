@@ -2,7 +2,70 @@
 <p>Dit zijn de patiëntgegevens:</p>
 
 
+<table style="width:50%">
+  <tr>
+    <th>Gegevens</th>
+    <th>Input</th>
+  </tr>
+  <tr>
+    <td>Voornaam</td>
+    <td><%= @patient.first_name %></td>
+  </tr>
+  <tr>
+    <td>Achternaam</td> 
+    <td><%= @patient.last_name %></td> 
+  </tr>
+  <tr>
+  	<td>Geslacht</td>
+	<td><%= @patient.gender %></td>
+  </tr>
+  <tr>
+  	<td>BSN</td>
+  	<td><%= @patient.BSN %></td>
+  </tr>
+  <tr>
+  	<td>Geboortedatum</td>
+  	<td><%= @patient.date_of_birth %></td>
+  </tr>
+  <tr>
+  	<td>Straat en huisnummer</td>
+  	<td><%= @patient.address %></td>
+  </tr>
+  <tr>
+  	<td>Postcode</td>
+	<td><%= @patient.postal_code %></td>
+  </tr>
+  <tr>
+  	<td>Plaats</td>
+  	<td><%= @patient.place_of_residence %></td>
+  </tr>
+  <tr>
+  	<td>Telefoonnummer</td>
+  	<td><%= @patient.phone_number %></td>
+  </tr>
+  <tr>
+  	<td>Emailadres</td>
+  	<td><%= @patient.email %></td>
+  </tr>
+  <tr>
+  	<td>Verzekeringsmaatschappij</td>
+  	<td><%= @patient.insurance_company %></td>
+  </tr>
+  <tr>
+    <td>Polisnummer</td>
+  	<td><%= @patient.policy_number %></td>
+  </tr>
+  <tr>
+  	<td>Patiënt toegevoegd op</td>
+  	<td><%= @patient.created_at %></td>
+  </tr>
+  <tr>
+  	<td>Patiënt laatst gewijzigd op</td>
+	<td><%= @patient.updated_at %></td>
+  </tr>
+</table>
 
 <div>
+	<%= link_to "Wijzig deze patiënt", edit_patient_url, class: "btn btn-lg btn-primary" %>
 	<%= link_to "Voer een nieuwe patiënt in", new_patient_url, class: "btn btn-lg btn-primary" %>	
 </div>

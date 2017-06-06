@@ -4,6 +4,7 @@ class PatientsController < ApplicationController
   end
 
   def index
+    @patients=Patient.all
   end
 
   def create
@@ -16,6 +17,7 @@ class PatientsController < ApplicationController
   end
 
   def edit
+    @patient = Patient.find(params[:id])
   end
 
   def show
@@ -23,9 +25,20 @@ class PatientsController < ApplicationController
   end
 
   def update
+    @patient = Patient.find(params[:id])
+    if @patient.update_attributes(patient_params)
+      # Handle a successful update.
+    else
+      render 'edit'
+    end
+    redirect_to @patient
   end
 
   def destroy
+    Patient.find(params[:id]).destroy
+    flash[:success] = "Patient deleted"
+    redirect_to patients_url
+
   end
 
   private

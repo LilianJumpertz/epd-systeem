@@ -1,2 +1,16 @@
-<h1>Patients#index</h1>
-<p>Find me in app/views/patients/index.html.erb</p>
+<h1>Overzicht patiënten</h1>
+<p>Dit is een overzicht van alle patiënten:</p>
+
+<table class="patients" style="width:50%">
+    <tr>
+        <th>Patiëntnaam</th>
+        <th></th>
+    </tr>
+    <% @patients.each do |patient| %>
+        <tr>
+            <td><%= link_to patient.first_name, patient %></td>
+            <td><%= link_to "delete", patient, method: :delete,
+                                  data: { confirm: "You sure?" } %></td>
+        </tr>
+  <% end %>
+</ul>

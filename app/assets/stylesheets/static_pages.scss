@@ -25,3 +25,51 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
+
+th, td {
+  padding: 7px;
+  text-align: left;
+}
+
+th {
+   background-color: #C0D9B9;
+   color: white;
+}
+
+td {
+    border-bottom: 1px solid lightgray;
+    color: gray;
+}
+
+p {
+  color: gray;
+}
+
+h1 {
+  color: #527D6B;
+  margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #C0D9B9;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #527D6B;
+  color: white;
+}
+
+.row {
+  color: gray;
+  border-radius: 5px;
+}

@@ -1,10 +1,11 @@
 <h1>EPD-systeem</h1>
 <p>Wat wil je doen?</p>
 
+
 <div class="buttons">
-	<p><%= link_to "Schrijf een nieuwe patiënt in", new_patient_url, class: "btn btn-md btn-success btn-block" %></p>
-	<p><%= link_to "Bekijk een overzicht van patiënten", patients_url, class: "btn btn-md btn-success btn-block" %></p>
-	<p><%= link_to "Schrijf een nieuwe arts in", patients_path, class: "btn btn-md btn-success btn-block disabled" %></p>
-	<p><%= link_to "Bekijk een overzicht van artsen", patients_path, class: "btn btn-md btn-success btn-block disabled" %></p>
+	<%= link_to "Schrijf een nieuwe patiënt in", new_patient_url, class: "btn" %>
+	<%= link_to "Bekijk een overzicht van patiënten", patients_url, class: "btn" %>
+	<%= link_to "Schrijf een nieuwe arts in", patients_path, class: "btn" %>
+	<%= link_to "Bekijk een overzicht van artsen", patients_path, class: "btn" %>
     </div>
 </div>
