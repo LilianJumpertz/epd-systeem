@@ -1,16 +1,17 @@
-﻿development:
+development:
   adapter: postgresql
   host: localhost
   encoding: unicode
   database: epdsysteem_development
   pool: 5
-  username: vagrant
-  password: password1
+  username: lilian
+  password: epd-inlog
+
 test:
   adapter: postgresql
   host: localhost
   encoding: unicode
   database: epdsysteem_test
   pool: 5
-  username: vagrant
-  password: password1
+  username: lilian
+  password: epd-inlog
