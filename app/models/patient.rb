@@ -1,5 +1,7 @@
 class Patient < ApplicationRecord
   
+  has_many :medicines
+
   before_validation { gender.downcase! }
   before_validation { postal_code.gsub(/\s+/, '') }
   before_save { email.downcase! }

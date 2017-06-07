@@ -1,39 +1,31 @@
 require 'test_helper'
 
 class PatientsControllerTest < ActionDispatch::IntegrationTest
-  test "should get new" do
-    get patients_new_url
-    assert_response :success
-  end
 
-  test "should get index" do
-    get patients_index_url
-    assert_response :success
-  end
+  # def setup
+	# 	@patient = Patient.new(first_name: "Test", last_name: "Patient", gender: "man", BSN: "12345678", date_of_birth: "24-12-1980", address: "Dorpsstraat 12A",
+	# 		postal_code: "1234AB", place_of_residence: "Amsterdam", phone_number: "06-12345678", email: "test@test.com", insurance_company: "CZ", policy_number: "12345")
+	# end
 
-  test "should get create" do
-    get patients_create_url
-    assert_response :success
-  end
+  # test "creating patient should be possible (new + create)" do
+  # end
 
-  test "should get edit" do
-    get patients_edit_url
-    assert_response :success
-  end
+  # test "editing patient should be possible (edit + update)" do
+  # end
+  
+  # test "showing patient should be possible" do
+  # end
+  
+  # test "destroying patient should be possible" do
+  # end
+  
+  # test "showing overview of patients should be possible" do
+  # end
+  
+  
 
-  test "should get show" do
-    get patients_show_url
-    assert_response :success
-  end
 
-  test "should get update" do
-    get patients_update_url
-    assert_response :success
-  end
-
-  test "should get destroy" do
-    get patients_destroy_url
-    assert_response :success
-  end
-
+  # 7 bewerkingen (loop uitzonderingen en dergelijke na) in intergration??
+  # fouten in velden
+  # Goedmeldingen
 end
